@@ -1,8 +1,10 @@
 #!/bin/bash
-
+SOURCE_DIR=/tmp/src/deployment
 DEPLOY_DIR=$JWS_HOME/webapps
 
-curl -o ${DEPLOY_DIR}/droute.war -O http://nexus.int.hlg.de/nexus/service/local/repositories/releases/content/de/hermes/droute/droute/0.0.7/droute-0.0.7.war
+cp $SOURCE_DIR/*.war $DEPLOY_DIR
+
+#curl -o ${DEPLOY_DIR}/droute.war -O http://nexus.int.hlg.de/nexus/service/local/repositories/releases/content/de/hermes/droute/droute/0.0.7/droute-0.0.7.war
 
 
 exit 0
