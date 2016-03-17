@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo hallo
+
+exit 0
