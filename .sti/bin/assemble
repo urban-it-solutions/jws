@@ -4,6 +4,10 @@ DEPLOY_DIR=$JWS_HOME/webapps
 
 cp $SOURCE_DIR/*.war $DEPLOY_DIR
 
+echo "172.20.248.199 nexus.int.hlg.de" >> /etc/hosts 
+
+ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+
 #curl -o ${DEPLOY_DIR}/droute.war -O http://nexus.int.hlg.de/nexus/service/local/repositories/releases/content/de/hermes/droute/droute/0.0.7/droute-0.0.7.war
 
 
