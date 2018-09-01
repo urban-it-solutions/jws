@@ -1,8 +1,9 @@
 #!/bin/bash
+set -x
 SOURCE_DIR=/opt/s2i/destination/src/deployment
-#DEPLOY_DIR=
+DEPLOY_DIR=/wildfly/standalone/deployments
 
-cp $SOURCE_DIR/sample.war $HOME/ROOT.war
+cp $SOURCE_DIR/sample.war $DEPLOY_DIR/ROOT.war
 
 #curl -o ${DEPLOY_DIR}/droute.war -O http://nexus.int.hlg.de/nexus/service/local/repositories/releases/content/de/hermes/droute/droute/0.0.7/droute-0.0.7.war
 
